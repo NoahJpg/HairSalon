@@ -44,6 +44,7 @@ input[type="text"] {
   padding: 10px 20px;
   font-size: 16px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	margin-right: 10px;
 }
 
 input[type="submit"] {
@@ -54,6 +55,7 @@ input[type="submit"] {
   background-color: #0099ff;
   color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	margin-left: 10px;
 }
 
 ul {
@@ -116,5 +118,3 @@ img {
 	background-size: cover;
 	background-position: center;
 }
-
-

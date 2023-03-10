@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using HairSalon.Models;
 using System.Collections.Generic;
+using System;
 using System.Linq;
 
 namespace HairSalon.Controllers
@@ -70,23 +71,6 @@ namespace HairSalon.Controllers
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
-
-public ActionResult Search(string searchString)
-{
-    var stylists = from stylist in _db.Stylists
-                  select stylist;
-
-    if (!string.IsNullOrEmpty(searchString))
-    {
-        stylists = stylists.Where(stylist => stylist.Name.Contains(searchString));
-    }
-    else
-    {
-        stylists = stylists.Where(stylist => false);
-    }
-
-    return View(stylists.ToList());
-}
 
   }
 }
