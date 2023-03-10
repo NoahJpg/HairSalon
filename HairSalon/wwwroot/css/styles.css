@@ -6,6 +6,15 @@ div#footer {
 	color:#CCC;
 	background:#333;
 	padding:8px;
+	text-align: center;
+}
+
+#footer a {
+  color: #FFF;
+}
+
+.home-page-links{
+	text-align: center;
 }
 
 body {
@@ -95,14 +104,17 @@ a {
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 10px;
-  background-color: #0099ff;
-  color: #fff;
-  font-size: 14px;
+img {
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
 }
 
+.home-bg {
+	background-image: url('~/css/img/salon-image.jpg');
+	background-size: cover;
+	background-position: center;
+}
 
 
