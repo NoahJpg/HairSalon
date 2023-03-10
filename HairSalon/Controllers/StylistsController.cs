@@ -71,10 +71,22 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    public ActionResult Search(string searchString)\
+public ActionResult Search(string searchString)
+{
+    var stylists = from stylist in _db.Stylists
+                  select stylist;
+
+    if (!string.IsNullOrEmpty(searchString))
     {
-      string stylists = from userSearch in _db.Stylists
-      select userSearch;
+        stylists = stylists.Where(stylist => stylist.Name.Contains(searchString));
     }
+    else
+    {
+        stylists = stylists.Where(stylist => false);
+    }
+
+    return View(stylists.ToList());
+}
+
   }
 }
