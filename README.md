@@ -14,6 +14,8 @@
 
 ## Setup/Installation Requirements
 
+![Hair Salon Structure](HairSalon/wwwroot/css/img/HairSalon.png)
+
 * _Clone this repo._
 * _Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "HairSalon"._
 * _This program was built using `Microsoft .NET SDK 6.0`, and may not be compatible with other versions._
