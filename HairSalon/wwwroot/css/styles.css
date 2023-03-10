@@ -11,6 +11,7 @@ div#footer {
 body {
 	text-align: center;
 	background-color: lightblue;
+	margin-top: 35px;
 }
 
 li {
