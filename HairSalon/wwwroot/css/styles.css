@@ -7,3 +7,16 @@ div#footer {
 	background:#333;
 	padding:8px;
 }
+
+body {
+	text-align: center;
+	background-color: lightblue;
+}
+
+li {
+	text-align: center;
+	display: inline-block;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
