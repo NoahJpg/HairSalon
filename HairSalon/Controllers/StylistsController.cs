@@ -71,10 +71,10 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    // public ActionResult Search(string searchString)\
-    // {
-    //   string stylists = from userSearch in _db.Stylists
-    //   select userSearch;
-    // }
+    public ActionResult Search(string searchString)\
+    {
+      string stylists = from userSearch in _db.Stylists
+      select userSearch;
+    }
   }
 }
