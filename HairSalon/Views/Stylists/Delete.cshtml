@@ -4,9 +4,9 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Are you sure you want to delete this?</h2>
+<h2>Are you sure?</h2>
 
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+<em><strong>@Html.DisplayFor(model => model.Name)</strong></em> will be deleted.
 @using (Html.BeginForm())
 {
   <input type="submit" value="Delete" />
