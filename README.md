@@ -2,7 +2,7 @@
 
 #### By Noah Atkinson
 
-#### _A web application to help Clarie (salon owner) manage her employees (stylists) and their clients._
+#### _A web application to help a salon owner manage her stylists and their clients._
 
 ## Technologies Used
 

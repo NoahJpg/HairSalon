@@ -118,3 +118,7 @@ img {
 	background-size: cover;
 	background-position: center;
 }
+
+.center {
+	text-align: center;
+}
