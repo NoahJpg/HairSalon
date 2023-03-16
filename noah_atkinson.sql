@@ -23,14 +23,24 @@ DROP TABLE IF EXISTS `Clients`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Clients` (
-  `ClientId` int NOT NULL,
+  `ClientId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   `StylistId` int DEFAULT NULL,
   PRIMARY KEY (`ClientId`),
   KEY `stylistid_idx` (`StylistId`),
   CONSTRAINT `stylistid` FOREIGN KEY (`StylistId`) REFERENCES `Stylists` (`StylistID`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Clients`
+--
+
+LOCK TABLES `Clients` WRITE;
+/*!40000 ALTER TABLE `Clients` DISABLE KEYS */;
+INSERT INTO `Clients` VALUES (1,'Husky Deli',1);
+/*!40000 ALTER TABLE `Clients` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `Stylists`
@@ -44,8 +54,18 @@ CREATE TABLE `Stylists` (
   `Name` varchar(255) DEFAULT NULL,
   `Details` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Stylists`
+--
+
+LOCK TABLES `Stylists` WRITE;
+/*!40000 ALTER TABLE `Stylists` DISABLE KEYS */;
+INSERT INTO `Stylists` VALUES (1,'Randy Savage','Curly Hair Specialist');
+/*!40000 ALTER TABLE `Stylists` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -56,4 +76,4 @@ CREATE TABLE `Stylists` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-10 10:30:46
+-- Dump completed on 2023-03-16  8:04:27
