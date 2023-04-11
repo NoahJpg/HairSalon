@@ -1,7 +1,22 @@
-# _Hair Salon_
+<h1 align="center">Hair Salon</h1>
+  <p align="center">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
+    <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg" />
+  </p>
+  
+  <p align="center">
+    <a href="#description">Description</a> •
+    <a href="#technologies-used">Technologies Used</a> •
+    <a href="#setup-and-installation-requirements">Setup and Installation Requirements</a> •
+    <a href="#known-bugs">Known Bugs</a> •
+    <a href="#license">License</a>
+    
+  </p>
+
 
 #### By Noah Atkinson
 
+## Description
 #### _A web application to help a salon owner manage her stylists and their clients._
 
 ## Technologies Used
@@ -12,7 +27,7 @@
 * _SQL Workbench_
 * _Entity Framework_
 
-## Setup/Installation Requirements
+## Setup and Installation Requirements
 
 ![Hair Salon Structure](HairSalon/wwwroot/css/img/HairSalon.png)
 
