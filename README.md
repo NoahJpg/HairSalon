@@ -16,6 +16,8 @@
 
 #### By Noah Atkinson
 
+![Hair Salon Structure](HairSalon/wwwroot/css/img/HairSalon.png)
+
 ## Description
 #### _A web application to help a salon owner manage her stylists and their clients._
 
@@ -29,7 +31,6 @@
 
 ## Setup and Installation Requirements
 
-![Hair Salon Structure](HairSalon/wwwroot/css/img/HairSalon.png)
 
 * _Clone this repo._
 * _Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "HairSalon"._
